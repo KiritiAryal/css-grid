@@ -1,0 +1,41 @@
+main{
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+    "header header"
+    "nav nav"
+    "left right"
+    "footer footer"
+    ;
+    grid-template-columns: 200px 600px;
+    grid-template-rows: 100px 200px 500px 100px;
+}
+
+h1, h2{
+    text-align: center;
+}
+
+header{
+    background-color: bisque;
+    grid-area: header;
+}
+
+nav{
+    background-color: aquamarine;
+    grid-area: nav;
+}
+
+.left{
+    background-color: blueviolet;
+    grid-area: left;
+    height: 500px;
+}
+
+.right{
+    background-color: yellowgreen;
+    grid-area: right;
+}
+footer{
+    background-color: dodgerblue;
+    grid-area: footer;
+}
